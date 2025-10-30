@@ -14,7 +14,7 @@ const MiniChart = () => (
 );
 
 const ThreatDetection = () => (
-  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-sm">
+  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
     <div className="flex items-center justify-between">
       <h3 className="text-slate-800 font-medium">Threat Detection</h3>
       <span className="text-xs text-slate-500">Phishing Attempts Over Time</span>
@@ -45,7 +45,7 @@ const ThreatDetection = () => (
 );
 
 const AuthAccess = () => (
-  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-sm">
+  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
     <h3 className="text-slate-800 font-medium">Authentication & Access</h3>
     <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
       {[
@@ -53,7 +53,7 @@ const AuthAccess = () => (
         { title: 'WebAuthn Tokens', status: 'pending' },
         { title: 'MFA Activity', status: 'active' },
       ].map(({ title, status }) => (
-        <div key={title} className="p-3 rounded-xl border border-slate-200 bg-[#F9FAFB] shadow-inner">
+        <div key={title} className="p-3 rounded-xl border border-slate-200 bg-gradient-to-br from-white to-[#F9FAFB] shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]">
           <div className="text-sm text-slate-700">{title}</div>
           <div className="mt-1 text-xs flex items-center gap-2">
             <span
@@ -68,10 +68,10 @@ const AuthAccess = () => (
 );
 
 const DataVault = () => (
-  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-sm">
+  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
     <div className="flex items-center justify-between">
       <h3 className="text-slate-800 font-medium">Data Vault</h3>
-      <button className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow transition-shadow text-sm">
+      <button className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow text-sm">
         <Upload className="h-4 w-4 text-[#0ea5e9]" /> Upload Securely
       </button>
     </div>
@@ -95,7 +95,7 @@ const DataVault = () => (
 );
 
 const CloudScanner = () => (
-  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-sm">
+  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
     <h3 className="text-slate-800 font-medium">Cloud Security</h3>
     <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-3">
       {[
@@ -103,7 +103,7 @@ const CloudScanner = () => (
         { provider: 'GCP', mis: 1 },
         { provider: 'Azure', mis: 2 },
       ].map(({ provider, mis }) => (
-        <div key={provider} className="p-3 rounded-xl border border-slate-200 bg-white hover:shadow transition-shadow">
+        <div key={provider} className="p-3 rounded-xl border border-slate-200 bg-white hover:shadow-lg transition-shadow">
           <div className="text-sm font-medium text-slate-700">{provider}</div>
           <div className="mt-1 text-xs text-slate-500">{mis} misconfigurations detected</div>
           <button className="mt-3 px-3 py-1.5 rounded-lg bg-gradient-to-r from-[#9FE8FA] to-[#E0F7FA] text-slate-800 text-xs shadow hover:shadow-md transition-shadow">Fix Now</button>
@@ -114,7 +114,7 @@ const CloudScanner = () => (
 );
 
 const AnomalyDetection = () => (
-  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-sm">
+  <div className="rounded-2xl bg-white border border-slate-200 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
     <div className="flex items-center justify-between">
       <h3 className="text-slate-800 font-medium">Anomaly Detection</h3>
       <span className="text-xs text-slate-500">User activity heatmap</span>
